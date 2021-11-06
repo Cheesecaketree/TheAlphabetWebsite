@@ -1,11 +1,58 @@
-.main {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+:root {
+    --OpenSans: 'Open Sans', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: white;
+  }
+  
+  ::selection {
+    color: black;
+    background: white;
+  }
+
+.centered {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.main p {
+.centered .letter {
+    font-family: var(--Roboto);
     font-size: 40vw;
 }
 
+.text {
+    font: var(--mainFont);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 105%;
+}
+
+footer div {
+    text-align: center;
+}
+
+.imprint_text {
+    font-family: var(--Roboto);
+    text-align: center;
+    font-size: large;
+    line-height: 125%;
+    color: #1c2126;
+}
+
+a {
+    text-decoration: none;
+}
