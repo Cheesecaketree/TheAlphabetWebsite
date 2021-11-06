@@ -6,8 +6,8 @@
     </head>
 
     <body id="cBackground">
-        <div class="main">
-        <p class="big_text" id="character">
+        <div class="centered">
+        <p class="colored">
             <?php
             $string = utf8_decode("ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ");
             $stringLength = strlen($string);
@@ -20,15 +20,12 @@
         
     </body>
 
-    <footer>
-        <p>Contact me on Twitter: <a href="https://twitter.com/cheesecaketree">@Cheesecaketree</a></p>
-        <p><a href="sites/imprint.html">Imprint</a></p>       
-    </footer>
+    <? echo file_get_contents("sites/footer.html") ?> 
 
-    <script type='text/javascript' src='js/TinyColor-master/tinycolor.js'></script>
+    <script type='text/javascript' src='js/TinyColor-master/tinycolor.js'></script> <!-- https://github.com/bgrins/TinyColor -->
     <script type='text/javascript'>
         var background = document.getElementById('cBackground');
-        var symbol = document.getElementById('character');
+        var colored = document.getElementsByClassName('colored');
 
         var colors = ["#77dd77", "#89cff0", "#ff6961", "#ff694f", "#ca9bf7", "#ffb7ce", "#fdfd96", "#cb99c9", "#bee7a5", "#befd73", "#bdb0d0", "#b2fba5"];
         var rand_index = Math.floor(Math.random() * colors.length);
@@ -36,8 +33,10 @@
         var char_color = colors[rand_index];
         var backg_color = tinycolor(char_color).spin(180).toString();
 
-        symbol.style.color = char_color;
         background.style.backgroundColor = backg_color;
         
+        for(var i = 0; i < colored.length; i++) {
+            colored[i].style.color = char_color;
+        }
     </script>
 </html>
