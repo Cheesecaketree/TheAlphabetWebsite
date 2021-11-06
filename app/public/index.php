@@ -7,7 +7,7 @@
 
     <body id="cBackground">
         <div class="centered">
-        <p class="colored">
+        <p class="colored letter" >
             <?php
             $string = utf8_decode("ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ");
             $stringLength = strlen($string);
@@ -34,7 +34,7 @@
         var backg_color = tinycolor(char_color).spin(180).toString();
 
         background.style.backgroundColor = backg_color;
-        
+
         for(var i = 0; i < colored.length; i++) {
             colored[i].style.color = char_color;
         }
