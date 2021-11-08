@@ -3,13 +3,13 @@
         <meta charset="utf-8">
         <title>Das Alphabet</title>
         <link rel="stylesheet" href="../css/style.css">    
-        <script type='text/javascript' src='../js/colors.js'></script>
+        <script type='text/javascript' src='../js/main.js'></script>
     </head>
 
     <body id="cBackground">
         <script type="text/javascript">
             window.onload = function() {
-                main();
+                setColors();
             }
         </script>
         <div class="centered">

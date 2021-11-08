@@ -49,8 +49,3 @@ function setLetter() {
 
     element.innerHTML = alphabet[Math.floor(Math.random() * alphabet.length)];
 }
-
-function startFunction() {
-    this.setLetter();
-    this.setColors();
-}
