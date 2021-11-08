@@ -7,11 +7,7 @@
     </head>
 
     <body id="cBackground">
-        <script type="text/javascript">
-            window.onload = function() {
-                setColors();
-            }
-        </script>
+        
         <div class="centered">
             <div class="imprint_text">
                 <p>
@@ -28,4 +24,16 @@
 
     <? echo file_get_contents("./footer.html") ?> 
 
+    <script type="text/javascript">
+        window.onload = function() {
+            setColors();
+        }
+        document.addEventListener('keydown', (event) => {
+            var name = event.key;
+            var code = event.code;
+            if (name === 'Enter') {
+                setColors();
+            }
+        }, false);
+    </script>
 </html>

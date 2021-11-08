@@ -8,13 +8,6 @@
     </head>
 
     <body id="cBackground">
-        <script type="text/javascript">
-            window.onload = function() {
-                setLetter();
-                setColors();
-            }
-        </script>
-
         <div class="centered">
             <p class="colored letter" id="let">A</p>
         </div>
@@ -22,4 +15,19 @@
     </body>
     
     <? echo file_get_contents("sites/footer.html") ?>
+    
+    <script type="text/javascript">
+        window.onload = function() {
+            setLetter();
+            setColors();
+        }
+        document.addEventListener('keydown', (event) => {
+            var name = event.key;
+            var code = event.code;
+            if (name === 'Enter') {
+                setLetter();
+                setColors();
+            }
+        }, false);
+    </script>
 </html>
