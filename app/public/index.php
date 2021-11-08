@@ -2,27 +2,20 @@
     <head>
         <meta charset="utf-8">
         <title>Das Alphabet</title>
+        <script type='text/javascript' src='js/main.js'></script>
         <link rel="stylesheet" href="../css/style.css">   
-        <script type='text/javascript' src='js/colors.js'></script>
+        
     </head>
 
     <body id="cBackground">
         <script type="text/javascript">
             window.onload = function() {
-                main();
+                startFunction();
             }
         </script>
 
-        <?php
-            $string = utf8_decode("ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ");
-            $stringLength = strlen($string);
-            $randomIndex = mt_rand(0, $stringLength - 1);
-            $randomLetter = $string[$randomIndex]
-        ?>
         <div class="centered">
-            <p class="colored letter" >
-                <?php echo utf8_encode($randomLetter); ?>
-            </p>
+            <p class="colored letter" id="let">A</p>
         </div>
         
     </body>

@@ -25,13 +25,9 @@
     height: 100vh;
 }
 
-.centered .letter {
+.letter {
     font-family: var(--Roboto);
     font-size: 40vw;
-}
-
-.text {
-    font: var(--mainFont);
 }
 
 footer {
