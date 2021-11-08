@@ -31,8 +31,8 @@ function main() {
     // making the colors
     var letterColor = getHSL(hue, sat, light);
     var backgroundColor = getHSL(spinHue(hue, 180), sat, light);
-    console.log(letterColor);
-    console.log(backgroundColor);
+    //console.log(letterColor);
+    //console.log(backgroundColor);
 
 
     // getting elements
