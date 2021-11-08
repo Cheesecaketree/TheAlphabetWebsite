@@ -29,6 +29,7 @@ background: white;
 }
 
 footer {
+    font-family: var(--Roboto);
     display: flex;
     justify-content: center;
     align-self: center;
@@ -49,4 +50,5 @@ footer div {
 
 a {
     text-decoration: none;
+    font-family: var(--Anonymous);
 }
