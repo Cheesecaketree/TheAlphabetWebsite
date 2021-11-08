@@ -44,7 +44,7 @@ function setColors() {
 }
 
 function setLetter() {
-    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ";
     const element = document.getElementById("let");
 
     element.innerHTML = alphabet[Math.floor(Math.random() * alphabet.length)];
