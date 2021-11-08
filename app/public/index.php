@@ -2,20 +2,27 @@
     <head>
         <meta charset="utf-8">
         <title>Das Alphabet</title>
-        <link rel="stylesheet" href="../css/style.css">    
+        <link rel="stylesheet" href="../css/style.css">   
+        <script type='text/javascript' src='js/colors.js'></script>
     </head>
 
     <body id="cBackground">
-        <div class="centered">
-        <p class="colored letter" >
-            <?php
+        <script type="text/javascript">
+            window.onload = function() {
+                main();
+            }
+        </script>
+
+        <?php
             $string = utf8_decode("ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ");
             $stringLength = strlen($string);
             $randomIndex = mt_rand(0, $stringLength - 1);
-
-            echo utf8_encode($string[$randomIndex]);
-            ?>
-        </p>
+            $randomLetter = $string[$randomIndex]
+        ?>
+        <div class="centered">
+            <p class="colored letter" >
+                <?php echo utf8_encode($randomLetter); ?>
+            </p>
         </div>
         
     </body>
@@ -23,7 +30,9 @@
     <? echo file_get_contents("sites/footer.html") ?> 
 
     <script type='text/javascript' src='js/TinyColor-master/tinycolor.js'></script> <!-- https://github.com/bgrins/TinyColor -->
-    <script type='text/javascript'>
+    
+
+    <!-- <script type='text/javascript'>
         var background = document.getElementById('cBackground');
         var colored = document.getElementsByClassName('colored');
 
@@ -38,5 +47,5 @@
         for(var i = 0; i < colored.length; i++) {
             colored[i].style.color = char_color;
         }
-    </script>
+    </script> -->
 </html>
