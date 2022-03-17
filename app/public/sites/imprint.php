@@ -4,6 +4,7 @@
         <title>Das Alphabet</title>
         <link rel="stylesheet" href="../css/style.css">    
         <script type='text/javascript' src='../js/main.js'></script>
+        <script type='text/javascript' src='../js/randomHue.js'></script>
     </head>
 
     <body id="cBackground">

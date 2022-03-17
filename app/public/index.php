@@ -3,6 +3,7 @@
         <meta charset="utf-8">
         <title>Das Alphabet</title>
         <script type='text/javascript' src='js/main.js'></script>
+        <script type='text/javascript' src='js/randomHue.js'></script>
         <link rel="stylesheet" href="../css/style.css">   
   
     </head>
